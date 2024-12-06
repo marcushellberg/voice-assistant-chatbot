@@ -89,7 +89,7 @@ export default function Index() {
     return (
         <div className="box-border h-full p-l flex flex-col items-center gap-m">
             <span style={{ fontSize: '100px' }}>🤖</span>
-            <h1> Chat with Marvin the Paranoid Android </h1>
+            <h1 className="text-xl"> Chat with Marvin the Paranoid Android </h1>
             <div className="max-w-screen-sm w-full space-y-4 flex flex-col gap-l">
                 <div className="flex justify-center space-x-4">
                     <Button
@@ -109,7 +109,7 @@ export default function Index() {
                 )}
 
                 {response && (
-                    <div className="text-body">
+                    <div>
                         {response.text}
                     </div>
                 )}
